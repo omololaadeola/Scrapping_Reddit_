@@ -2,9 +2,9 @@ import datetime
 import pandas as pd
 import praw
 
-reddit = praw.Reddit(client_id='upIaiUoXb7sOkvQN9XCOhQ',
-                        client_secret='qOjaH2BeUL-6M6GtT2BMcSKM62jceA',
-                        user_agent='Orcawise Keyword')
+reddit = praw.Reddit(client_id='Client_Id',
+                        client_secret='client_secret',
+                        user_agent='user_name')
 
 query = 'Teaching Council AND Requirements'
 country = "Ireland"
