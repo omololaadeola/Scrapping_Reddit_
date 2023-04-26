@@ -18,7 +18,7 @@ for post in reddit.subreddit("all").search(query, limit=500):
         date = datetime.datetime.fromtimestamp(comment.created_utc)
         author_name = comment.author.name if comment.author else '[deleted]'
         result.append([query, post.url, post.title, comment.body, author_name, date.strftime("%Y-%m-%d"), country])
-
+# store data in dataframe
 df = pd.DataFrame(result, columns=['Keyword', 'URL', 'Post_Title', 'Comment', 'Author_Name', 'Comment_Date', 'Country'])
 # print(df)
 # Save the dataframe to a CSV file
