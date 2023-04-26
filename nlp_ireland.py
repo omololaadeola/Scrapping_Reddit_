@@ -6,7 +6,7 @@ reddit = praw.Reddit(client_id='Client_Id',
                         client_secret='client_secret',
                         user_agent='user_name')
 
-query = 'Teaching Council AND Requirements'
+query = 'your_keywords'
 country = "Ireland"
 
 result = []
